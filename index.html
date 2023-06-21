@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Gerador de senhas</title>
+   <link rel="stylesheet" href="./assets/style/global.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+</head>
+<body>
+   <header>
+      <div class="container">
+         <div class="content">
+           <h1>Ciphery</h1>
+           <p>Desbloqueie seu mundo com senhas seguras!</p>
+           <div class="icons">
+             <img id="tema" src="./assets/imgs/Icon.png" alt="">
+           </div>
+           <div class="border"></div>
+         </div>
+       </div>
+      <div id="theme"></div>
+      <div class="Dborder">
+         <h3>Senha Padrão</h3>
+      </div>
+      <div class="pass">
+         <svg width="544" height="41" viewBox="0 0 544 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <rect width="544" height="41" rx="4" fill="#27272A"/>
+         </svg>
+       </div>
+      <div class="paste">
+         <img id="paste" src="./assets/imgs/paste.png" alt="icon paste">
+      </div>
+      <div class="gerar">
+         <img id="gen" src="./assets/imgs/Button.png" alt="">
+       </div>
+       <div class="senha" id="senhaGerada">
+         <div class="HashPass" id="senhaGeradaHash"></div>
+
+
+       </div>
+      <div class="border2"></div>
+      <div class="hash">
+         <h3>Hash Gerado</h3>
+         <svg width="544" height="41" viewBox="0 0 544 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="544" height="41" rx="4" fill="#27272A"/>
+         </svg>
+         <img src="./assets/imgs/copy.png" alt="">
+      </div>
+      <div class="border3">
+         <h5>MD5</h5>
+       </div>
+       <div class="passmd5" id="md5SenhaGerada"></div>
+      <div class="border4">
+         <h5>SHA-1</h5>
+       </div>
+       <div class="ShaPass" id="sha1SenhaGerada"></div>
+      <div class="border5">
+         <h5>bycrypt</h5>
+      </div>
+      <div class="t1">
+         <h1>Características</h1>
+      </div>
+      <div class="border6">
+         <h5>ABC</h5>
+       </div>
+      <div class="border7">
+         <h5>abc</h5>
+      </div>
+      <div class="width">
+         <h3>Tamanho</h3>
+      </div>
+      <div class="wborder">
+         <input type="number" id="inputNumber" min="0" max="40" onchange="updatePasswordLength()" placeholder="Digite um número entre 0 e 40">
+       </div>
+       
+   </header>
+   <script src="./assets/js/script.js"></script>
+</body>
+</html>
